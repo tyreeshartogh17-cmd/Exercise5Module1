@@ -1,0 +1,81 @@
+/* The fixed top navigation bar container */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0; /* 15px padding top and bottom */
+    z-index: 1000; /* Keeps it on top of other content */
+    
+    /* Layout to evenly space the links */
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+/* Styling the links inside the nav bar */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Optional: Slight color change when hovering over links */
+nav a:hover {
+    color: #ddd;
+}
+
+/* IMPORTANT FIX FOR YOUR BLOG CONTENT */
+body {
+    padding-top: 60px; /* Adjust this so your blog text doesn't hide under the fixed nav bar */
+}
+ 
+/* Style for individual blog post containers */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* 0 top, auto left/right (centers it), 20px bottom margin between posts */
+    font-family: 'Arial', sans-serif;
+    
+    /* Optional: Clean spacing inside the post */
+    padding: 20px; 
+    box-sizing: border-box;
+}
+/* Style for individual blog post containers */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto 20px auto; /* 0 top, auto left/right (centers it), 20px bottom margin between posts */
+    font-family: 'Arial', sans-serif;
+    
+    /* Optional: Clean spacing inside the post */
+    padding: 20px; 
+    box-sizing: border-box;
+}
+/* Style for the main blog title */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 15px; /* Adds a clean gap below the main heading */
+}
+
+/* Style for subheadings inside your posts */
+h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;    /* Adds space above the subheading */
+    margin-bottom: 10px; /* Adds space below the subheading */
+}
+/* Style for all general links in your blog */
+a {
+    color: #3498db;
+    text-decoration: none; /* Removes the underline by default */
+    transition: text-decoration 0.2s ease; /* Makes the transition smooth */
+}
+
+/* Style for when a user hovers over a link */
+a:hover {
+    text-decoration: underline; /* Adds the underline back on hover */
+}
